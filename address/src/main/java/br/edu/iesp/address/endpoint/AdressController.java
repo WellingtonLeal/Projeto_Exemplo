@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.edu.iesp.address.entity.Address;
 import br.edu.iesp.address.property.AddressProperty;
+import br.edu.iesp.address.service.AddressService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
@@ -21,6 +22,9 @@ public class AdressController {
 	@Autowired
 	private AddressProperty addressProperty;
 	
+	@Autowired
+	private AddressService addressService;
+	
 	
 	private static final Logger logger = LoggerFactory.getLogger(AdressController.class);
 
@@ -30,6 +34,8 @@ public class AdressController {
 	public Address getDefaultAddress(@PathVariable("code") String code) {
 		
 		logger.info(addressProperty.getMessageNotFound());
+		
+		
 		
 		//System.out.println(addressProperty.getMessageNotFound());
 		

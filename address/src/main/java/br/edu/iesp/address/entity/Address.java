@@ -20,4 +20,7 @@ public class Address {
 	private String ibge;
 	private String gia;
 	
+	public Address(String cep) {
+		this.cep=cep;
+	}
 }
