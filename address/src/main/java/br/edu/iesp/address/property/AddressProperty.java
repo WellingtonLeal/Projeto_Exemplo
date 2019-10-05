@@ -15,7 +15,6 @@ import lombok.Setter;
 public class AddressProperty {
 	
 	private String messageNotFound;
-	private String este2;
 
 	
 }
