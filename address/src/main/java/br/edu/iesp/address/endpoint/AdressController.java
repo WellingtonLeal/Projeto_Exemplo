@@ -1,5 +1,7 @@
 package br.edu.iesp.address.endpoint;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,11 +20,18 @@ import io.swagger.annotations.ApiOperation;
 public class AdressController {
 	@Autowired
 	private AddressProperty addressProperty;
+	
+	
+	private static final Logger logger = LoggerFactory.getLogger(AdressController.class);
+
 
 	@ApiOperation(value = "show viacep address by code", response=Iterable.class)
 	@GetMapping(path = "{code}", produces= {MediaType.APPLICATION_JSON_VALUE})
 	public Address getDefaultAddress(@PathVariable("code") String code) {
-		System.out.println(addressProperty.getMessageNotFound());
+		
+		logger.info(addressProperty.getMessageNotFound());
+		
+		//System.out.println(addressProperty.getMessageNotFound());
 		
 		return new Address();
 		
