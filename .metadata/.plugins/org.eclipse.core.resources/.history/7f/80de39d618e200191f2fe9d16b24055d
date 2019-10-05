@@ -1,0 +1,23 @@
+package br.edu.iesp.address;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.context.annotation.ComponentScan;
+
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+
+@SpringBootApplication
+@EnableFeignClients
+@EnableHystrix
+@EnableSwagger2
+@ComponentScan(basePackges = {"br.edu.iesp"})
+public class AddressApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(AddressApplication.class, args);
+	}
+
+}

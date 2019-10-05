@@ -1,0 +1,13 @@
+package br.edu.iesp.address.entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+//@NoArgsConstructor
+public class Address {
+
+	
+	private String cep;
+}

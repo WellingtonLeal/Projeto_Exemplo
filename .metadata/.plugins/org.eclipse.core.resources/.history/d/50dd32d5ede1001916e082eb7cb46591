@@ -1,0 +1,16 @@
+#nome da aplicação
+spring.application.name=config-server
+
+server.port=8888
+
+#Servidor de configuração junto ao github
+spring.cloud.config.server.git.url=https://github.com/WellingtonLeal/config-server.git
+
+#logar no gitHub com acesso pelo user/password atraves do token
+spring.cloud.config.server.git.username=well
+spring.cloud.config.server.git.password=35d3c69139cabf7779e4a65eb6b784e02a2d2ca0
+#força atuzalição 
+spring.cloud.config.server.git.force-pull=true 
+#manter atualizado
+spring.cloud.config.server.git.refresh-rate=0
+

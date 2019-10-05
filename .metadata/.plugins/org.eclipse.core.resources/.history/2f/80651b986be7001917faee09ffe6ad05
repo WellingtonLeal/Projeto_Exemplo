@@ -1,0 +1,14 @@
+package br.edu.iesp.address.endpoint;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import io.swagger.annotations.Api;
+
+@Api(tags={"adrres"})
+@RestController
+@RequestMapping("query") 
+public class AndressController {
+
+	
+}

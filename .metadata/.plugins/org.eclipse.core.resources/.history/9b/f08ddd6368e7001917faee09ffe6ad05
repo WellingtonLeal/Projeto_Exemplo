@@ -1,0 +1,5 @@
+package br.edu.iesp.address.endpoint;
+
+public class AndressController {
+
+}
