@@ -9025,3 +9025,6 @@ java.io.IOException: Unable to resolve plug-in "org.eclipse.datatools.connectivi
 
 !ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2019-10-05 10:41:17.730
 !MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2019-10-05 10:46:14.928
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported
